@@ -17,11 +17,13 @@ Para jogar, basta:
 
 O jogo possui apenas uma tela e acrescenta a malha de cartas quando o formulário é validado. Ao final da partida é possível clicar em "Novo Jogo" novamente para iniciar outra partida.
 
-Implementamos com sucesso modos de 1 e 2 jogadores no jogo, o primeiro criando um cronômetro para o jogador competir contra si mesmo, e o outro colocando pontuações para ambos os jogadores, que sobem na medida em que conseguem virar cartas iguais.
+O jogo utliza uma expressão regular (Regex) para validar o e-mail digitado pelo usuário e parece funcionar perfeitamente com o formato proposto. Se o formulário não for completamente preenchido ou o e-mail for inválido, o jogo mostra alertas para cada um desses casos, e impede o início do jogo até os ajustes serem feitos.
 
-O jogo coloca um par de todas as cartas que serão utilizadas na partida em um array, depois embaralhando este array para definir a ordem que as cartas irão aparecer no grid.
+Implementamos modos de 1 e 2 jogadores no jogo, o primeiro criando um cronômetro para o jogador competir contra si mesmo, e o outro colocando pontuações para ambos os jogadores, que sobem na medida em que conseguem virar cartas iguais.
 
-Também implementamos uma animação de virada das cartas via CSS. O mesmo também foi utilizado para sombreamento e dimensionamento dos elementos e também para a definição da fonte do documento, que obtemos da biblioteca Google Fonts.
+O jogo coloca um par de todas as cartas que serão utilizadas na partida em um array, depois embaralhando este array para definir a ordem que as cartas irão aparecer no grid. O tamanho deste array é definido pela escolha do tamanho do grid, sendo metade das posições de carta disponíveis nele.
+
+Também implementamos uma animação de virada das cartas via CSS. O mesmo também foi utilizado para sombreamento, dimensionamento e posicionamento dos elementos, assim como para a definição da fonte do documento, que obtivemos da biblioteca Google Fonts.
 
 ### Bugs:
 
