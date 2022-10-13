@@ -21,7 +21,7 @@ O jogo utliza uma expressão regular (Regex) para validar o e-mail digitado pelo
 
 Implementamos modos de 1 e 2 jogadores no jogo, o primeiro criando um cronômetro para o jogador competir contra si mesmo, e o outro colocando pontuações para ambos os jogadores, que sobem na medida em que conseguem virar cartas iguais.
 
-O jogo coloca um par de todas as cartas que serão utilizadas na partida em um array, depois embaralhando este array para definir a ordem que as cartas irão aparecer no grid. O tamanho deste array é definido pela escolha do tamanho do grid, sendo metade das posições de carta disponíveis nele.
+O jogo coloca um par de todas as cartas que serão utilizadas na partida em um array, depois embaralhando este array para definir a ordem que as cartas irão aparecer no grid. O tamanho deste array é definido pela escolha do tamanho do grid.
 
 Também implementamos uma animação de virada das cartas via CSS. O mesmo também foi utilizado para sombreamento, dimensionamento e posicionamento dos elementos, assim como para a definição da fonte do documento, que obtivemos da biblioteca Google Fonts.
 
