@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Jogo da memória</title>
+    <title>Jogo da Memória Priplaniano</title>
     <script src="js/memoria.js"></script>
 </head>
 <body>
-    <form action="javascript:novoJogo()">
-        <select ="nJogadores">
-                <option value="" selected disabled hidden>Número de Jogadores</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select>
-        <select id="nTabuleiro">
-                <option value="" selected disabled hidden>Tamanho do Tabuleiro</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-            </select>
-        <input id="btnNovo" type="submit" value="Novo Jogo">
-    </form>
+    <div class="mail">
+        <h2>Digite o seu e-mail:</h2>
+        <form name="form1" action="#"> 
+        <ul>
+        <li><input type='text' name='text1'/></li>
+        <li>&nbsp;</li>
+        <li class="submit"><input type="submit" name="submit" value="Submit" onclick="validarEmail(document.form1.text1)"/></li>
+        <li>&nbsp;</li>
+        </ul>
+        </form>
+        </div>
 </body>
 </html>
