@@ -1,6 +1,6 @@
 # INF1407_ProgWeb_2022.2
 
-## Grupo: Guilherme Vassallo 1621178, Ana da Hora 
+## Grupo: Guilherme Vassallo 1621178, Ana da Hora 2112149
 
 Este é um jogo da memória para 1 ou 2 jogadores, feito exclusivamente para habitantes da terra distante de Priplanus.
 
