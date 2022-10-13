@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Jogo da Memória Priplaniano</title>
-    <script src="js/memoria.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
+
 <body>
-    <div class="mail">
-        <h2>Digite o seu e-mail:</h2>
-        <form name="form1" action="#"> 
-        <ul>
-        <li><input type='text' name='text1'/></li>
-        <li>&nbsp;</li>
-        <li class="submit"><input type="submit" name="submit" value="Submit" onclick="validarEmail(document.form1.text1)"/></li>
-        <li>&nbsp;</li>
-        </ul>
-        </form>
-        </div>
+
+    <form action="javascript: novoJogo()">
+
+        <h2 id="greeting">👽 Jogo da Memória Priplaniano 👽</h2>
+
+        <select id="nJogadores">
+                <option value="" selected disabled hidden>Número de Jogadores</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        <select id="nTabuleiro">
+                <option value="" selected disabled hidden>Tamanho do Tabuleiro</option>
+                <option value="2">2x2</option>
+                <option value="4">4x4</option>
+            </select>
+
+        <h3>Digite o seu e-mail:</h3>
+
+        <input type="text" name="email" id="email" value=""/>
+    
+        <br>
+
+        <input id="btnNovo" type="submit" value="Novo Jogo">
+    </form>
+
+    <div class="mesa">
+        <section id="espacoCartas" class="mt-3 mb-3">
+            <img src="" alt="">
+        </section>
+    </div>
+
+    <div class="pontuacao">
+        <section id="jogador1">
+        </section>
+        <section id="jogador2">
+        </section>
+    </div>
+    <script src="js/memoria.js"></script>
 </body>
 </html>
