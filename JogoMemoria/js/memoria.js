@@ -1,4 +1,4 @@
-// variaveis globais
+//Variáveis globais
 var mapa = []
 var jogada = 0
 var jogador = 1
@@ -9,7 +9,8 @@ var posicao2 = 0
 var pontuacao1 = 0
 var pontuacao2 = 0
 var doisJogadores = false
-    // elementos da DOM
+
+//Elementos da DOM
 var mesa = document.getElementById("espacoCartas")
 var jogador1 = document.getElementById("jogador1")
 var jogador2 = document.getElementById("jogador2")
@@ -17,14 +18,15 @@ var select1 = document.getElementById("nJogadores")
 var select2 = document.getElementById("nTabuleiro")
 var btnNovo = document.getElementById("btnNovo")
 var email = document.getElementById("email")
-    // cronometro (https://codepen.io/Romlonix/pen/Fwsza)
+    
+//Cronômetro
 var centesimas = 0;
 var segundos = 0;
 var minutos = 0;
 
 function emailValido(input) {
     //Regex de validação do email
-    var mailformat = /\\[a-zA-Z]+\[[a-zA-Z]+\|[a-zA-Z]+(\|[a-zA-Z]+)*\]/;
+    var mailformat = /^\\[a-zA-Z]+\[[a-zA-Z]+\|[a-zA-Z]+(\|[a-zA-Z]+)*\]$/gm;
     if(input.match(mailformat)) {
         return true;
     }
